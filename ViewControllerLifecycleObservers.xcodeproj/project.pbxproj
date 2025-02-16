@@ -11,6 +11,12 @@
 		B3CF22602D6293050037DD29 /* ViewControllerLifecycleObserversTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF225F2D6293050037DD29 /* ViewControllerLifecycleObserversTests.swift */; };
 		B3CF22612D6293050037DD29 /* ViewControllerLifecycleObservers.h in Headers */ = {isa = PBXBuildFile; fileRef = B3CF22552D6293000037DD29 /* ViewControllerLifecycleObservers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3CF226B2D6293510037DD29 /* UIViewControllers+LifecycleObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF226A2D6293510037DD29 /* UIViewControllers+LifecycleObservers.swift */; };
+		B3CF22732D62972E0037DD29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF22722D62972E0037DD29 /* AppDelegate.swift */; };
+		B3CF22752D62972E0037DD29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF22742D62972E0037DD29 /* SceneDelegate.swift */; };
+		B3CF22772D62972E0037DD29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF22762D62972E0037DD29 /* ViewController.swift */; };
+		B3CF227A2D62972E0037DD29 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3CF22792D62972E0037DD29 /* Base */; };
+		B3CF227C2D6297330037DD29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CF227B2D6297330037DD29 /* Assets.xcassets */; };
+		B3CF227F2D6297330037DD29 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3CF227E2D6297330037DD29 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		B3CF225A2D6293050037DD29 /* ViewControllerLifecycleObserversTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerLifecycleObserversTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3CF225F2D6293050037DD29 /* ViewControllerLifecycleObserversTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleObserversTests.swift; sourceTree = "<group>"; };
 		B3CF226A2D6293510037DD29 /* UIViewControllers+LifecycleObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControllers+LifecycleObservers.swift"; sourceTree = "<group>"; };
+		B3CF22702D62972E0037DD29 /* ViewLifecycleObserversSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewLifecycleObserversSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3CF22722D62972E0037DD29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3CF22742D62972E0037DD29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B3CF22762D62972E0037DD29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3CF22792D62972E0037DD29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3CF227B2D6297330037DD29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3CF227E2D6297330037DD29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3CF22802D6297330037DD29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3CF226D2D62972E0037DD29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +76,7 @@
 			children = (
 				B3CF22542D6293000037DD29 /* ViewControllerLifecycleObservers */,
 				B3CF225E2D6293050037DD29 /* ViewControllerLifecycleObserversTests */,
+				B3CF22712D62972E0037DD29 /* ViewLifecycleObserversSampleApp */,
 				B3CF22532D6293000037DD29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +86,7 @@
 			children = (
 				B3CF22522D6293000037DD29 /* ViewControllerLifecycleObservers.framework */,
 				B3CF225A2D6293050037DD29 /* ViewControllerLifecycleObserversTests.xctest */,
+				B3CF22702D62972E0037DD29 /* ViewLifecycleObserversSampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +106,20 @@
 				B3CF225F2D6293050037DD29 /* ViewControllerLifecycleObserversTests.swift */,
 			);
 			path = ViewControllerLifecycleObserversTests;
+			sourceTree = "<group>";
+		};
+		B3CF22712D62972E0037DD29 /* ViewLifecycleObserversSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				B3CF22722D62972E0037DD29 /* AppDelegate.swift */,
+				B3CF22742D62972E0037DD29 /* SceneDelegate.swift */,
+				B3CF22762D62972E0037DD29 /* ViewController.swift */,
+				B3CF22782D62972E0037DD29 /* Main.storyboard */,
+				B3CF227B2D6297330037DD29 /* Assets.xcassets */,
+				B3CF227D2D6297330037DD29 /* LaunchScreen.storyboard */,
+				B3CF22802D6297330037DD29 /* Info.plist */,
+			);
+			path = ViewLifecycleObserversSampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +172,23 @@
 			productReference = B3CF225A2D6293050037DD29 /* ViewControllerLifecycleObserversTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B3CF226F2D62972E0037DD29 /* ViewLifecycleObserversSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3CF22812D6297330037DD29 /* Build configuration list for PBXNativeTarget "ViewLifecycleObserversSampleApp" */;
+			buildPhases = (
+				B3CF226C2D62972E0037DD29 /* Sources */,
+				B3CF226D2D62972E0037DD29 /* Frameworks */,
+				B3CF226E2D62972E0037DD29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewLifecycleObserversSampleApp;
+			productName = ViewLifecycleObserversSampleApp;
+			productReference = B3CF22702D62972E0037DD29 /* ViewLifecycleObserversSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +204,9 @@
 						LastSwiftMigration = 1540;
 					};
 					B3CF22592D6293050037DD29 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B3CF226F2D62972E0037DD29 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -169,6 +226,7 @@
 			targets = (
 				B3CF22512D6293000037DD29 /* ViewControllerLifecycleObservers */,
 				B3CF22592D6293050037DD29 /* ViewControllerLifecycleObserversTests */,
+				B3CF226F2D62972E0037DD29 /* ViewLifecycleObserversSampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +243,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3CF226E2D62972E0037DD29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3CF227C2D6297330037DD29 /* Assets.xcassets in Resources */,
+				B3CF227F2D6297330037DD29 /* Base in Resources */,
+				B3CF227A2D62972E0037DD29 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +275,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B3CF226C2D62972E0037DD29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3CF22772D62972E0037DD29 /* ViewController.swift in Sources */,
+				B3CF22732D62972E0037DD29 /* AppDelegate.swift in Sources */,
+				B3CF22752D62972E0037DD29 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -216,6 +294,25 @@
 			targetProxy = B3CF225C2D6293050037DD29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3CF22782D62972E0037DD29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3CF22792D62972E0037DD29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3CF227D2D6297330037DD29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3CF227E2D6297330037DD29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B3CF22622D6293050037DD29 /* Debug */ = {
@@ -442,6 +539,60 @@
 			};
 			name = Release;
 		};
+		B3CF22822D6297330037DD29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ViewLifecycleObserversSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mobiledeveloper.ViewLifecycleObserversSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3CF22832D6297330037DD29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ViewLifecycleObserversSampleApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mobiledeveloper.ViewLifecycleObserversSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,6 +619,15 @@
 			buildConfigurations = (
 				B3CF22682D6293050037DD29 /* Debug */,
 				B3CF22692D6293050037DD29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3CF22812D6297330037DD29 /* Build configuration list for PBXNativeTarget "ViewLifecycleObserversSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3CF22822D6297330037DD29 /* Debug */,
+				B3CF22832D6297330037DD29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

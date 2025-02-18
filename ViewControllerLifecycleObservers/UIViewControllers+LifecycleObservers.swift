@@ -32,17 +32,17 @@ public extension UIViewController {
 }
 
 private class ViewControllerLifecycleObserver: UIViewController, UIViewControllerLifecycleObserver {
-    private var viewWillAppearCallback: () -> Void = {}
-    private var viewDidAppearCallback: () -> Void = {}
+    private var viewWillAppearCallback: (() -> Void)? = nil
+    private var viewDidAppearCallback: (() -> Void)? = nil
     
-    private var viewWillDisappearCallback: () -> Void = {}
-    private var viewDidDisappearCallback: () -> Void = {}
+    private var viewWillDisappearCallback: (() -> Void)? = nil
+    private var viewDidDisappearCallback: (() -> Void)? = nil
     
     convenience init(
-        viewWillAppearCallback: @escaping () -> Void = {},
-        viewDidAppearCallback: @escaping () -> Void = {},
-        viewWillDisappearCallback: @escaping () -> Void = {},
-        viewDidDisappearCallback: @escaping () -> Void = {}
+        viewWillAppearCallback: (() -> Void)? = nil,
+        viewDidAppearCallback: (() -> Void)? = nil,
+        viewWillDisappearCallback: (() -> Void)? = nil,
+        viewDidDisappearCallback: (() -> Void)? = nil
     ) {
         self.init()
         self.viewWillAppearCallback = viewWillAppearCallback
@@ -53,22 +53,22 @@ private class ViewControllerLifecycleObserver: UIViewController, UIViewControlle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
-        viewWillAppearCallback()
+        viewWillAppearCallback?()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewWillAppear(false)
-        viewDidAppearCallback()
+        viewDidAppearCallback?()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillAppear(false)
-        viewWillDisappearCallback()
+        viewWillDisappearCallback?()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillAppear(false)
-        viewDidDisappearCallback()
+        viewDidDisappearCallback?()
     }
     
     func remove() {
